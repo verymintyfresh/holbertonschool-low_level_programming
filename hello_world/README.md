@@ -6,3 +6,6 @@ This folder contains various files, as listed below:
 | File | Description |
 | ---- | ----------- |
 | 0-preprocessor | Runs the C preprocessor on a file. |
+| 1-compiler | Runs just the C compiler on a file. |
+| 2-assembler | Runs the C compiler and assembler on a file only. |
+| 3-name | Compiles, assembles and links a C file. |

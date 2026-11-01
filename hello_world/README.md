@@ -12,3 +12,4 @@ This folder contains various files, as listed below:
 | 4-puts.c | Uses `puts` to print a line. |
 | 5-printf.c | Uses `printf` to print a line. |
 | 6-size.c | Prints sizes of various types. |
+| 100-intel | Generates assembly code in Intel syntax. |

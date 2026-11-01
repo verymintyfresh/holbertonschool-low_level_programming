@@ -9,3 +9,6 @@ This folder contains various files, as listed below:
 | 1-compiler | Runs just the C compiler on a file. |
 | 2-assembler | Runs the C compiler and assembler on a file only. |
 | 3-name | Compiles, assembles and links a C file. |
+| 4-puts.c | Uses `puts` to print a line. |
+| 5-printf.c | Uses `printf` to print a line. |
+| 6-size.c | Prints sizes of various types. |

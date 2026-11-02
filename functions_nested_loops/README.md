@@ -13,3 +13,4 @@ This directory contains files for the Functions and nested loops project, as des
 | 4-isalpha.c | Checks whether a number represents a letter in ASCII. |
 | 5-sign.c | Prints the sign of a given number. |
 | 6-abs.c | Calculates the absolute value of a number. |
+| 7-print\_last\_digit.c | Returns and prints the last digit of a number. |

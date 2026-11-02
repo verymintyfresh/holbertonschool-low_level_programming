@@ -18,3 +18,13 @@ int multiples(void)
 	printf("%d\n", sum);
 	return (sum);
 }
+
+/**
+ * main - entry point of the program
+ * Return: always 0 (success)
+ */
+int main(void)
+{
+	multiples();
+	return (0);
+}

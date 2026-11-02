@@ -16,7 +16,6 @@ void multiples(void)
 			sum += i;
 	}
 	printf("%u\n", sum);
-	return;
 }
 
 /**

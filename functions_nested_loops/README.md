@@ -10,3 +10,4 @@ This directory contains files for the Functions and nested loops project, as des
 | 1-alphabet.c | Contains a function which prints the alphabet in lowercase. |
 | 2-print\_alphabet\_x10.c | Contains a function which prints the alphabet in lowercase, ten times. |
 | 3-islower.c | Checks whether a number represents a lowercase ASCII character. | 
+| 4-isalpha.c | Checks whether a number represents a letter in ASCII. |

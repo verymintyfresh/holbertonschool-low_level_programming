@@ -5,7 +5,7 @@
  * multiples - calculates the sum of multiples of 3 or 5 below 1024
  * Return: the sum
  */
-int multiples(void)
+void multiples(void)
 {
 	unsigned int sum;
 	int i;
@@ -16,7 +16,7 @@ int multiples(void)
 			sum += i;
 	}
 	printf("%u\n", sum);
-	return (sum);
+	return;
 }
 
 /**

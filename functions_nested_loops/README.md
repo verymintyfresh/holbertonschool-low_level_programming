@@ -14,3 +14,4 @@ This directory contains files for the Functions and nested loops project, as des
 | 5-sign.c | Prints the sign of a given number. |
 | 6-abs.c | Calculates the absolute value of a number. |
 | 7-print\_last\_digit.c | Returns and prints the last digit of a number. |
+| 8-24\_hours.c | Prints every minute of the day. |

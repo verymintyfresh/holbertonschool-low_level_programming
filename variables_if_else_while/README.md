@@ -16,4 +16,4 @@ This directory contains files for the Variables: if, else, while project, as des
 | 8-print\_base16.c | Prints the digits of base 16 on one line. |	
 | 9-print\_comb.c | Prints digits from base 10 separated by commas and spaces. |
 | 100-print\_comb3.c | Prints combinations of two-digit numbers. |
-
+| 101-print\_comb4.c | Prints combinations of three-digit numbers. |

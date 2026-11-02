@@ -5,6 +5,7 @@ This directory contains files for the Functions and nested loops project, as des
 
 | File | Description |
 | ---- | ----------- |
-| 0-putchar.c | Prints the string `_putchar`. |
 | main.h | Header file for the project |
+| 0-putchar.c | Prints the string `_putchar`. |
 | 1-alphabet.c | Contains a function which prints the alphabet in lowercase. |
+| 2-print\_alphabet\_x10.c | Contains a function which prints the alphabet in lowercase, ten times. |

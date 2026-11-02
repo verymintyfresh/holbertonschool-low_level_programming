@@ -7,8 +7,10 @@
  */
 int print_last_digit(int n)
 {
+	int last = n % 10;
+
 	if (n <= 0)
 		n = n * -1; /* C does modulo arithmetic lazily */
-	_putchar((n % 10) + '0');
+	_putchar(last + '0');
 	return (n % 10);
 }

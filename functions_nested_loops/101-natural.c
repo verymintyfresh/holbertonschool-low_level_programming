@@ -7,7 +7,7 @@
  */
 int multiples(void)
 {
-	int sum;
+	unsigned int sum;
 	int i;
 
 	for (i = 0; i < 1024; i++)

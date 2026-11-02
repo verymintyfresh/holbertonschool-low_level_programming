@@ -16,3 +16,4 @@ This directory contains files for the Functions and nested loops project, as des
 | 7-print\_last\_digit.c | Returns and prints the last digit of a number. |
 | 8-24\_hours.c | Prints every minute of the day. |
 | 9-times\_table.c | Prints a 9 times table. |
+| 10-add.c | Adds two numbers together. |

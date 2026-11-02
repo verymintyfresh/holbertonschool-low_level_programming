@@ -19,3 +19,4 @@ This directory contains files for the Functions and nested loops project, as des
 | 10-add.c | Adds two numbers together. |
 | 11-print\_to\_98.c | Prints a list of numbers heading towards 98. | 
 | 100-times\_table.c | Prints a times table to a given number. |
+| 101-natural.c | Calculates the sum of multiples of 3 and 5 under 1024. | 

@@ -14,7 +14,7 @@ void fibonacci(void)
 
 	for (n = 0; n < 49; n++)
 	{
-		printf("%ld,\xc2\xa0", i);
+		printf("%ld, ", i);
 		tmp = i;
 		i = i + j;
 		j = tmp;

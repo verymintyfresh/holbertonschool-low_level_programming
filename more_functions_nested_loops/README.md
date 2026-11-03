@@ -7,3 +7,4 @@ This directory contains files for the More Functions, Nested Loops project, as d
 | ---- | ----------- |
 | 0-isupper.c | Determines whether an integer represents an uppercase ASCII character. |
 | 1-isdigit.c | Determines whether an integer represents an ASCII digit (0-9). |
+| 2-mul.c | Multiplies two integers. |

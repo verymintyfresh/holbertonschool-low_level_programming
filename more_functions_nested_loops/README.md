@@ -11,3 +11,4 @@ This directory contains files for the More Functions, Nested Loops project, as d
 | 3-print\_numbers.c | Prints numbers from 0 to 9. |
 | 4-print\_most\_numbers.c | Prints most numbers from 0 to 9. |
 | 5-more\_numbers.c | Prints even more numbers. |
+| 6-print\_line.c | Prints a number of underscores. |

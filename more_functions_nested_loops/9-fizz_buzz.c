@@ -8,7 +8,7 @@
 void fizz_buzz(void)
 {
 	int i;
-	
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
@@ -17,7 +17,8 @@ void fizz_buzz(void)
 			printf("Buzz");
 		if (i % 3 != 0 && i % 5 != 0)
 			printf("%d", i);
-		printf(" ");
+		if (i != 100) /* don't print the last space */
+			printf(" ");
 	}
 	printf("\n");
 }

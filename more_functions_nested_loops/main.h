@@ -16,5 +16,7 @@ void fizz_buzz(void);
 void print_triangle(int size);
 long prime_factor(long n);
 int is_prime(long n);
+int _pow(int base, int n);
+void print_number(int n);
 
 #endif

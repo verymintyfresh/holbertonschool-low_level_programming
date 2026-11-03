@@ -21,3 +21,14 @@ void fibonacci(void)
 	}
 	printf("%ld\n", i);
 }
+
+/**
+ * main - Entry point of the program
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	fibonacci();
+
+	return (0);
+}

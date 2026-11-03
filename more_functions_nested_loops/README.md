@@ -14,3 +14,4 @@ This directory contains files for the More Functions, Nested Loops project, as d
 | 6-print\_line.c | Prints a number of underscores. |
 | 7-print\_diagonal.c | Prints a diagonal line. |
 | 8-print\_square.c | Prints a square of hashes. |
+| 9-fizz\_buzz.c | Does the Fizz Buzz test. |

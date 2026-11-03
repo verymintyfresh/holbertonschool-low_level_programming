@@ -6,3 +6,4 @@ This directory contains files for the Intro: Debugging project, as described bel
 | File | Description |
 | ---- | ----------- |
 | sum\_to\_n.c | Prints the nth triangle number. |
+| multiplication\_table.c | Prints a table of multiplication values. |

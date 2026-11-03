@@ -16,3 +16,4 @@ This directory contains files for the More Functions, Nested Loops project, as d
 | 8-print\_square.c | Prints a square of hashes. |
 | 9-fizz\_buzz.c | Does the Fizz Buzz test. |
 | 10-print\_triangle.c | Prints a right-angled triangle. |
+| 11-prime\_factor.c | Finds the largest prime factor of a particular number. |

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "101-main.h"
 
 /**
  * _pow - calculates the power of a number

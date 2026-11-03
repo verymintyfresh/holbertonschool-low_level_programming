@@ -1,2 +1,7 @@
 # Compiled C code
 a.out
+*.h.gch
+
+# Test files
+_putchar.c
+test_main.c

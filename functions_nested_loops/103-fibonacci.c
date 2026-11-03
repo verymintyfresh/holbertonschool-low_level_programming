@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * fibonacci - prints the first 50 fibonacci numbers
- * Return: nothing
+ * fibonacci_sum - calculates the sum of even-valued fibonacci numbers
+ * Return: the sum
  */
 long fibonacci_sum(void)
 {
@@ -11,18 +11,16 @@ long fibonacci_sum(void)
 	long j = 1;
 	long tmp;
 	long sum;
-	int n = 0;
 
 	while (i < 4000000)
 	{
-		if (n % 2 == 1) /* starting at 0 */
+		if (i % 2 == 0)
 			sum += i;
 		tmp = i;
 		i = i + j;
 		j = tmp;
-		n++;
 	}
-	
+
 	return (sum);
 }
 

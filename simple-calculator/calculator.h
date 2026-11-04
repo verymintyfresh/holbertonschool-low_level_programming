@@ -6,5 +6,6 @@ void display_menu(void);
 void run_choice(unsigned int);
 
 int add(void);
+int sub(void);
 
 #endif /* CALCULATOR_H */

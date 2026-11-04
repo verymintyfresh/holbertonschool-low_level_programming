@@ -22,7 +22,9 @@ void display_menu(void)
  */
 void run_choice(unsigned int choice)
 {
-	choice = choice + 1; /* does nothing right now */
+	/*  if (choice < 1 || choice > 4) -- for later */
+	printf("Invalid choice\n");
+	choice = choice + 1; /* for compilation reasons, this does nothing */
 }
 
 /**
@@ -35,10 +37,14 @@ int main(void)
 
 	display_menu();
 	printf("Choice: ");
-	scanf("%u", &choice);
+	if (!scanf("%u", &choice))
+		scanf("%*[^0-9]%u", &choice);
 	while (choice != 0)
 	{
 		run_choice(choice);
+		printf("Choice: ");
+		if (!scanf("%u", &choice))
+			scanf("%*[^0-9]%u", &choice);
 	}
 	printf("Bye!\n");
 

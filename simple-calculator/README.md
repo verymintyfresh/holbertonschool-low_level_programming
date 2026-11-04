@@ -1,5 +1,7 @@
 # Simple Calculator
 
+This is a project for the Holberton School's C unit. The simple calculator displays a menu of choices to the user, and loops the menu until choice 0 is selected (quit).
+
 ## How to compile this program
 After cloning the repository, run the following:
 
@@ -19,3 +21,4 @@ Once the compilation has run successfully, you can run the code with the followi
 
 ## Known limitations
 - No calculation functions
+- Empty choice doesn't auto-complete

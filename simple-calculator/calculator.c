@@ -1,4 +1,6 @@
 #include "calculator.h"
+#include "operations.h"
+#include "operations.c"
 #include <stdio.h>
 
 /**
@@ -22,84 +24,54 @@ void display_menu(void)
  */
 void run_choice(unsigned int choice)
 {
+	int a;
+	int b;
+
 	if (choice == 1)
 	{
-		printf("Result: %d\n", add());
-		printf("\n");
-		display_menu();
-		return;
+		get_input(&a, &b);
+		printf("Result: %d\n", add(a, b));
 	}
 	else if (choice == 2)
 	{
-		printf("Result: %d\n", sub());
-		printf("\n");
-		display_menu();
-		return;
+		get_input(&a, &b);
+		printf("Result: %d\n", sub(a, b));
 	}
 	else if (choice == 3)
 	{
-		printf("Result: %d\n", mul());
-		printf("\n");
-		display_menu();
-		return;
+		get_input(&a, &b);
+		printf("Result: %d\n", mul(a, b));
 	}
-	/*  if (choice < 1 || choice > 4) -- for later */
-	printf("Invalid choice\n");
-	choice = choice + 1; /* for compilation reasons, this does nothing */
+	else if (choice == 4)
+	{
+		get_input(&a, &b);
+		if (b == 0)
+		{
+			printf("Error: division by zero\n");
+		}
+		else
+			printf("Result: %.2f\n", div(a, b));
+	}
+	else
+		printf("Invalid choice\n");
+	printf("\n");
+	display_menu();
 }
 
 /**
- * add - Prompts the user for two numbers A and B, then adds them together
- * Return: A + B
+ * get_input - asks the user for two numbers and stores them in given variables
+ * @a: an integer
+ * @b: an integer
+ * Return: nothing
  */
-int add(void)
+void get_input(int *a, int *b)
 {
-	int a;
-	int b;
-
 	printf("A: ");
-	if (!scanf("%d", &a))
-		scanf("%*[^0-9]%d", &a);
+	if (!scanf("%d", a))
+		scanf("%*[^0-9]%d", a);
 	printf("B: ");
-	if (!scanf("%d", &b))
-		scanf("%*[^0-9]%d", &b);
-	return (a + b);
-}
-
-/**
- * sub - Prompts the user for two numbers A and B, then subtracts B from A
- * Return: A - B
- */
-int sub(void)
-{
-	int a;
-	int b;
-
-	printf("A: ");
-	if (!scanf("%d", &a))
-		scanf("%*[^0-9]%d", &a);
-	printf("B: ");
-	if (!scanf("%d", &b))
-		scanf("%*[^0-9]%d", &b);
-	return (a - b);
-}
-
-/**
- * mul - Prompts the user for two numbers A and B, then multiplies them
- * Return: A * B
- */
-int mul(void)
-{
-	int a;
-	int b;
-
-	printf("A: ");
-	if (!scanf("%d", &a))
-		scanf("%*[^0-9]%d", &a);
-	printf("B: ");
-	if (!scanf("%d", &b))
-		scanf("%*[^0-9]%d", &b);
-	return (a * b);
+	if (!scanf("%d", b))
+		scanf("%*[^0-9]%d", b);
 }
 
 /**

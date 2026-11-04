@@ -22,9 +22,34 @@ void display_menu(void)
  */
 void run_choice(unsigned int choice)
 {
+	if (choice == 1)
+	{
+		printf("Result: %d\n", add());
+		printf("\n");
+		display_menu();
+		return;
+	}
 	/*  if (choice < 1 || choice > 4) -- for later */
 	printf("Invalid choice\n");
 	choice = choice + 1; /* for compilation reasons, this does nothing */
+}
+
+/**
+ * add - Adds two numbers
+ * Return: the addition of two numbers entered by the user
+ */
+int add(void)
+{
+	int a;
+	int b;
+
+	printf("A: ");
+	if (!scanf("%d", &a))
+		scanf("%*[^0-9]%d", &a);
+	printf("B: ");
+	if (!scanf("%d", &b))
+		scanf("%*[^0-9]%d", &b);
+	return (a + b);
 }
 
 /**

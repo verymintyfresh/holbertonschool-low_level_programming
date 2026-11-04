@@ -1,6 +1,6 @@
 # Simple Calculator
 
-This is a project for the Holberton School's C unit. The simple calculator displays a menu of choices to the user, and loops the menu until choice 0 is selected (quit).
+This is a project for the Holberton School's C unit. The simple calculator displays a menu of choices to the user, and loops the menu until a valid choice is selected. The calculator can currently add two numbers.
 
 ## How to compile this program
 After cloning the repository, run the following:
@@ -17,8 +17,9 @@ Once the compilation has run successfully, you can run the code with the followi
 ```
 
 ## Supported operations
+- 1: Add two integers 
 - 0: Quit the program
 
 ## Known limitations
-- No calculation functions
+- Only adds numbers
 - Empty choice doesn't auto-complete

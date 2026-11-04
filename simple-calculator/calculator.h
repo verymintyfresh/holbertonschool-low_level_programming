@@ -7,5 +7,6 @@ void run_choice(unsigned int);
 
 int add(void);
 int sub(void);
+int mul(void);
 
 #endif /* CALCULATOR_H */

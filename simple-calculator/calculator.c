@@ -36,6 +36,13 @@ void run_choice(unsigned int choice)
 		display_menu();
 		return;
 	}
+	else if (choice == 3)
+	{
+		printf("Result: %d\n", mul());
+		printf("\n");
+		display_menu();
+		return;
+	}
 	/*  if (choice < 1 || choice > 4) -- for later */
 	printf("Invalid choice\n");
 	choice = choice + 1; /* for compilation reasons, this does nothing */
@@ -75,6 +82,24 @@ int sub(void)
 	if (!scanf("%d", &b))
 		scanf("%*[^0-9]%d", &b);
 	return (a - b);
+}
+
+/**
+ * mul - Prompts the user for two numbers A and B, then multiplies them
+ * Return: A * B
+ */
+int mul(void)
+{
+	int a;
+	int b;
+
+	printf("A: ");
+	if (!scanf("%d", &a))
+		scanf("%*[^0-9]%d", &a);
+	printf("B: ");
+	if (!scanf("%d", &b))
+		scanf("%*[^0-9]%d", &b);
+	return (a * b);
 }
 
 /**

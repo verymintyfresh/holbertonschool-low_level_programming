@@ -10,10 +10,12 @@ void multiples(void)
 	unsigned int sum;
 	int i;
 
-	for (i = 0; i < 1024; i++)
+	i = 0;
+	while (i < 1024)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 			sum += i;
+		i++;
 	}
 	printf("%u\n", sum);
 }

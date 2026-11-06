@@ -38,8 +38,10 @@ void print_number(int n)
 		return;
 	}
 
-	while (_pow(10, i) <= n)
+	while (_pow(10, i) <= n && _pow(10, i) > 0)
+	{
 		i++;
+	}
 	while (i >= 1)
 	{
 		_putchar(n / _pow(10, i - 1) + '0');

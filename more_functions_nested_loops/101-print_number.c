@@ -1,4 +1,5 @@
 #include "101-main.h"
+#include <limits.h>
 
 /**
  * _pow - calculates the power of a number
@@ -23,8 +24,9 @@ int _pow(int base, int n)
  */
 void print_number(int n)
 {
-	int i = 0;
+	int i;
 
+	i = 1;
 	if (n < 0)
 	{
 		_putchar('-');
@@ -36,7 +38,7 @@ void print_number(int n)
 		return;
 	}
 
-	while (_pow(10, i) < n)
+	while (_pow(10, i) <= n)
 		i++;
 	while (i >= 1)
 	{

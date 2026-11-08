@@ -3,5 +3,8 @@ a.out
 *.h.gch
 
 # Test files
-_putchar.c
 test_main.c
+
+# Holberton files
+_putchar.c
+baseline_loop.c

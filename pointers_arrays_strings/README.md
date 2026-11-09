@@ -9,3 +9,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | 0-reset\_to\_98.c | Changes a variable to 98 using a pointer. |
 | 1-swap.c | Swaps two variables using pointers. |
 | 2-strlen.c | Returns the length of a string. |
+| 3-puts.c | Prints a string. |

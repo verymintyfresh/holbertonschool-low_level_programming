@@ -15,4 +15,6 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 int convert_digits(char *start, int digits);
 
+char *_strcat(char *dest, char *src);
+
 #endif

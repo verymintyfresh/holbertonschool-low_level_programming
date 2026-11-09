@@ -16,3 +16,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | 7-puts\_half.c | Prints the second half of a string only. |
 | 8-print\_array.c | Prints a number of variables from an array. |
 | 9-strcpy.c | Copies a string into destination pointer. |
+| 100-atoi.c | Finds a number in a string. |

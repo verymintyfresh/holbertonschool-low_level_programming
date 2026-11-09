@@ -23,3 +23,4 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | File | Description |
 | ---- | ----------- |
 | 0-strcat.c | Concatenates two strings. | 
+| 1-strncat.c | Concatenates a string with a specified number of characters from a second string. |

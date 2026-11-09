@@ -16,5 +16,6 @@ int _atoi(char *s);
 int convert_digits(char *start, int digits);
 
 char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
 
 #endif

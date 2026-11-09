@@ -12,3 +12,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | 3-puts.c | Prints a string. |
 | 4-print\_rev.c | Prints a string in reverse. |
 | 5-rev\_string.c | Reverses a string in-place. |
+| 6-puts2.c | Prints every other character of a string. |

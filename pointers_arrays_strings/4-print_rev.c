@@ -15,11 +15,11 @@ void print_rev(char *s)
 		i++;
 		s++;
 	}
-	while (i >= 0)
+	while (i > 0)
 	{			/* Print everything backwards */
-		_putchar(*s);
 		i--;
 		s--;
+		_putchar(*s);	/* Don't print the \0 first */
 	}
 	_putchar('\n');
 }

@@ -7,3 +7,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | ---- | ----------- |
 | main.h | Contains declarations of various functions for the project. |
 | 0-reset\_to\_98.c | Changes a variable to 98 using a pointer. |
+| 1-swap.c | Swaps two variables using pointers. |

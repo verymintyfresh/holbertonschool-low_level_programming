@@ -10,3 +10,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | 1-swap.c | Swaps two variables using pointers. |
 | 2-strlen.c | Returns the length of a string. |
 | 3-puts.c | Prints a string. |
+| 4-print\_rev.c | Prints a string in reverse. |

@@ -11,3 +11,4 @@ This directory contains files for the Pointers, Arrays and Strings project, as d
 | 2-strlen.c | Returns the length of a string. |
 | 3-puts.c | Prints a string. |
 | 4-print\_rev.c | Prints a string in reverse. |
+| 5-rev\_string.c | Reverses a string in-place. |

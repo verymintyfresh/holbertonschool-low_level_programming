@@ -55,7 +55,7 @@ int _atoi(char *s)
  */
 int convert_digits(char *start, int digits)
 {
-	int sum;
+	unsigned int sum;			/* deal with numbers too negative for `int' */
 
 	sum = *start - '0';
 	while (digits > 1)

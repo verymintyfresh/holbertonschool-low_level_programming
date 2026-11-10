@@ -52,8 +52,6 @@ char replace(char c)
 	{
 		return (*replace_lower * lower + *replace_upper * upper);
 	}
-	else
-	{
-		return (c);
-	}
+
+	return (c);
 }

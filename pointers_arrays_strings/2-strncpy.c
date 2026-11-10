@@ -24,7 +24,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 		i++;
 	}
-	while (*dest != '\0') /* as per man (3) strncpy */
+	while (*dest != '\0') /* as per man (3) THE FUNCTION */
 	{
 		*dest = '\0';
 		dest++;

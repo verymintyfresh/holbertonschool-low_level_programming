@@ -27,3 +27,4 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | 2-strncpy.c | Copies a specified number of characters from a string into another. |
 | 3-strcmp.c | Compares two strings. |
 | 4-rev\_array.c | Reverses an array of integers in-place. |
+| 5-string\_toupper.c | Converts a string to uppercase. | 

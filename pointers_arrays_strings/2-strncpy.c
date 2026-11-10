@@ -24,11 +24,11 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 		i++;
 	}
-	while (*dest != '\0') /* as per man (3) THE FUNCTION */
-	{
-		*dest = '\0';
-		dest++;
-	}
+	/* while (*dest != '\0') /\* as per man (3) THE FUNCTION *\/ */
+	/* { */
+	/*	*dest = '\0'; */
+	/*	dest++; */
+	/* } */
 
 
 	return (orig_dest);

@@ -28,3 +28,4 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | 3-strcmp.c | Compares two strings. |
 | 4-rev\_array.c | Reverses an array of integers in-place. |
 | 5-string\_toupper.c | Converts a string to uppercase. | 
+| 6-cap_string.c | Capitalises every word in a string. |

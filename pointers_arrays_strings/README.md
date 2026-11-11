@@ -30,6 +30,7 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | 5-string\_toupper.c | Converts a string to uppercase. | 
 | 6-cap_string.c | Capitalises every word in a string. |
 | 7-leet.c | Converts a string to 1337 73x7. |
+| 100-rot13.c | Translates a string using the ROT13 cipher. |
 
 In addition, it contains files for the Even More Pointers, Arrays and Strings project:
 

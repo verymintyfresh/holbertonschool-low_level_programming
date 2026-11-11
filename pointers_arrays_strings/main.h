@@ -26,4 +26,6 @@ int should_cap(char *);
 char *leet(char *);
 char replace(char c);
 
+char *_memset(char *s, char b, unsigned int n);
+
 #endif

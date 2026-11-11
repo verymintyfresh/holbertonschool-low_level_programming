@@ -30,3 +30,9 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | 5-string\_toupper.c | Converts a string to uppercase. | 
 | 6-cap_string.c | Capitalises every word in a string. |
 | 7-leet.c | Converts a string to 1337 73x7. |
+
+In addition, it contains files for the Even More Pointers, Arrays and Strings project:
+
+| File | Description |
+| ---- | ----------- |
+| 0-memset.c | Fills a memory buffer with data. |

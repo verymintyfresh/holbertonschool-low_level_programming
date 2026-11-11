@@ -37,3 +37,4 @@ In addition, it contains files for the Even More Pointers, Arrays and Strings pr
 | ---- | ----------- |
 | 0-memset.c | Fills a memory buffer with data. |
 | 1-memcpy.c | Copies memory from one location to another. |
+| 2-strchr.c | Finds the location of a character in a string. |

@@ -39,3 +39,4 @@ In addition, it contains files for the Even More Pointers, Arrays and Strings pr
 | 1-memcpy.c | Copies memory from one location to another. |
 | 2-strchr.c | Finds the location of a character in a string. |
 | 3-strspn.c | Counts how many bytes of memory match a given sequence of bytes. |
+| 4-strpbrk.c | Finds the location of any accepted byte in a sequence of bytes. |

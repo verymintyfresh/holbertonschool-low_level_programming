@@ -31,6 +31,7 @@ It also contains files for the More Pointers, Arrays and Strings project:
 | 6-cap_string.c | Capitalises every word in a string. |
 | 7-leet.c | Converts a string to 1337 73x7. |
 | 100-rot13.c | Translates a string using the ROT13 cipher. |
+| 101-print\_number.c | Prints a number using only `_putchar`. |
 
 In addition, it contains files for the Even More Pointers, Arrays and Strings project:
 

@@ -42,3 +42,4 @@ In addition, it contains files for the Even More Pointers, Arrays and Strings pr
 | 4-strpbrk.c | Finds the location of any accepted byte in a sequence of bytes. |
 | 5-strstr.c | Finds the first occurrence of a substring in a given string. |
 | 7-print\_chessboard.c | Prints a given chessboard. |
+| 8-print\_diagsums.c | Prints the diagonal sums of a square matrix. |

@@ -4,6 +4,6 @@
 int main(void);
 void display_menu(void);
 void run_choice(unsigned int);
-void get_input(int *, int *);
+int get_input(int *, int *);
 
 #endif /* CALCULATOR_H */

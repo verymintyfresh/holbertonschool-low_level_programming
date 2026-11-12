@@ -29,22 +29,26 @@ void run_choice(unsigned int choice)
 
 	if (choice == 1)
 	{
-		get_input(&a, &b);
+		while (!get_input(&a, &b))
+			get_input(&a, &b);
 		printf("Result: %d\n", add(a, b));
 	}
 	else if (choice == 2)
 	{
-		get_input(&a, &b);
+		while (!get_input(&a, &b))
+			get_input(&a, &b);
 		printf("Result: %d\n", sub(a, b));
 	}
 	else if (choice == 3)
 	{
-		get_input(&a, &b);
+		while (!get_input(&a, &b))
+			get_input(&a, &b);
 		printf("Result: %d\n", mul(a, b));
 	}
 	else if (choice == 4)
 	{
-		get_input(&a, &b);
+		while (!get_input(&a, &b))
+			get_input(&a, &b);
 		if (b == 0)
 		{
 			printf("Error: division by zero\n");
@@ -62,16 +66,33 @@ void run_choice(unsigned int choice)
  * get_input - asks the user for two numbers and stores them in given variables
  * @a: an integer
  * @b: an integer
- * Return: nothing
+ * Return: 1 if both inputs are valid, 0 otherwise
  */
-void get_input(int *a, int *b)
+int get_input(int *a, int *b)
 {
+	int clear;
+
 	printf("A: ");
-	if (!scanf("%d", a))
-		scanf("%*[^0-9]%d", a);
+	if (!scanf("%d%*[^\n]", a))
+	{
+		clear = getchar();
+		while (clear != '\n' && clear != EOF)
+			clear = getchar();
+
+		printf("Invalid input. Please input an integer.\n");
+		return (0);
+	}
 	printf("B: ");
-	if (!scanf("%d", b))
-		scanf("%*[^0-9]%d", b);
+	if (!scanf("%d%*[^\n]", b))
+	{
+		clear = getchar();
+		while (clear != '\n' && clear != EOF)
+			clear = getchar();
+
+		printf("Invalid input. Please input an integer.\n");
+		return (0);
+	}
+	return (1);
 }
 
 /**

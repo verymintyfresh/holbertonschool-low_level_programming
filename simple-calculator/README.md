@@ -27,4 +27,4 @@ Once the compilation has run successfully, you can run the code with the followi
 - 0: Quit the program
 
 ## Known limitations
-- Empty choice doesn't auto-complete
+- Text before a number prevents the number from being read.

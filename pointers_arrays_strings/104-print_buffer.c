@@ -19,7 +19,7 @@ void print_buffer(char *b, int size)
 	{
 		if (i % 10 == 0)	/* new line */
 		{
-			printf("0x%08x:", i);
+			printf("%08x:", i);
 			memcpy(bytes, b + i, 10);
 		}
 		byte = 0;

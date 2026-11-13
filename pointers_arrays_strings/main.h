@@ -27,6 +27,9 @@ char *leet(char *);
 char replace(char c);
 char *rot13(char *);
 void print_number(int n);
+void print_buffer(char *b, int size);
+void print_bytes(char *b, int size);
+void print_last(char *b, int n);
 
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);

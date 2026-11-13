@@ -15,6 +15,11 @@ void print_buffer(char *b, int size)
 	int byte;
 
 	i = 0;
+	if (size <= 0)
+	{
+		printf("\n");
+		return;
+	}
 	while (i < size)
 	{
 		if (i % 10 == 0)	/* new line */

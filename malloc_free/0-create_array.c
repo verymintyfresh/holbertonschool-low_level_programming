@@ -2,6 +2,12 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+/**
+ * create_array - Creates and initialises an array
+ * @size: The size of the array
+ * @c: The byte to initialise the array with
+ * Return: the array
+ */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;

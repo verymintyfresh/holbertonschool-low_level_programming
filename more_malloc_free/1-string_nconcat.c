@@ -5,6 +5,7 @@
  * string_nconcat - Concatenates two strings to a new memory location.
  * @s1: the first string
  * @s2: the second string
+ * @n: number of bytes to concatenate from s2
  * Return: The concatenation of the two strings.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

@@ -20,14 +20,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		dog->name = malloc(str_len(name) + 1);
 		if (dog->name != NULL)
-			store_string(dog->name, name);
+			return (NULL);
 	}
 	dog->age = age;
 	if (owner != NULL)
 	{
 		dog->owner = malloc(str_len(owner) + 1);
 		if (dog->owner != NULL)
-			store_string(dog->owner, owner);
+			return (NULL);
 	}
 
 	return (dog);
@@ -47,6 +47,7 @@ void store_string(char *dest, char *src)
 		src++;
 		dest++;
 	}
+	*dest = '\0';
 }
 
 /**

@@ -7,3 +7,4 @@ This directory contains files for the Structures, Typedef project, as described 
 | ---- | ----------- |
 | dog.h | Describes a dog. |
 | 1-init\_dog.c | Initialises a variable of type `struct dog`. |
+| 2-print\_dog.c | Prints information about a `struct dog`. |

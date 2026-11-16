@@ -20,7 +20,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		dog->name = malloc(str_len(name) + 1);
 		if (dog->name == NULL)
+		{
+			free(dog->name);
+			free(dog);
 			return (NULL);
+		}
 		store_string(dog->name, name);
 	}
 	dog->age = age;
@@ -28,7 +32,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		dog->owner = malloc(str_len(owner) + 1);
 		if (dog->owner == NULL)
+		{
+			free(dog->owner);
+			free(dog);
 			return (NULL);
+		}
 		store_string(dog->owner, owner);
 	}
 

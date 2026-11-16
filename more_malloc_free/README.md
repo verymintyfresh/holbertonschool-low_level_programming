@@ -8,3 +8,4 @@ This directory contains files for the More Malloc, Free project, as described be
 | main.h | Contains declarations of various functions for the project. |
 | 0-malloc\_checked.c | Allocates memory, but exits on failure. |
 | 1-string\_nconcat.c | Concatenates a given number of bytes of a second string onto a first string. |
+| 2-calloc.c | Allocates memory for an array. |

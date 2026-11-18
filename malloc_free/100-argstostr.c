@@ -33,7 +33,6 @@ char *argstostr(int ac, char **av)
 	if (concat == NULL)
 		return (NULL);
 	ptr = concat;
-
 	i = 0;
 	while (i < ac)
 	{
@@ -45,7 +44,8 @@ char *argstostr(int ac, char **av)
 			concat++;
 		}
 		*concat = '\n';
-		concat++;
+		if (i + 1 < ac)
+			concat++;
 		i++;
 	}
 	return (ptr);

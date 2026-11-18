@@ -15,8 +15,8 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
 	size = 0;
+	i = 0;
 	while (i < ac)
 	{
 		tmp = av[i];
@@ -28,8 +28,7 @@ char *argstostr(int ac, char **av)
 		size++;		/* space for \n */
 		i++;
 	}
-
-	concat = malloc(size);
+	concat = malloc(size + 1);
 	if (concat == NULL)
 		return (NULL);
 	ptr = concat;
@@ -44,9 +43,9 @@ char *argstostr(int ac, char **av)
 			concat++;
 		}
 		*concat = '\n';
-		if (i + 1 < ac)
-			concat++;
+		concat++;
 		i++;
 	}
+	concat = '\0';
 	return (ptr);
 }

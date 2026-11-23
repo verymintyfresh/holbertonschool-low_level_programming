@@ -1,6 +1,11 @@
 #ifndef CALC_H_
 #define CALC_H_
 
+/**
+ * struct op - An operator
+ * @op: the representation of the operator
+ * @f: the function which the operator represents
+ */
 typedef struct op
 {
 	char *op;

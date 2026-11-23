@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 
-	sqrt = _sqrt_helper(0, n, n);
+	sqrt = _sqrt_helper(0, (long)n, (long)n);
 	if (sqrt * sqrt == n) /* exact */
 		return (sqrt);
 	else
@@ -26,9 +26,9 @@ int _sqrt_recursion(int n)
  * @n: the number
  * Return: sqrt(n)
  */
-int _sqrt_helper(int low, int high, int n)
+int _sqrt_helper(long low, long high, long n)
 {
-	int mid;
+	long mid;
 
 	if (low <= high)
 	{
@@ -36,7 +36,7 @@ int _sqrt_helper(int low, int high, int n)
 
 		if ((mid * mid <= n) && ((mid + 1) * (mid + 1)) > n)
 		{		/* guess is 'close enough' */
-			return (mid);
+			return ((int)mid);
 		}
 
 		if (mid * mid < n)
@@ -44,5 +44,5 @@ int _sqrt_helper(int low, int high, int n)
 		else
 			return (_sqrt_helper(low, mid - 1, n));
 	}
-	return (low);
+	return ((int)low);
 }

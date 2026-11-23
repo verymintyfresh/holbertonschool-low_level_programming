@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - entry point of the program
@@ -33,7 +34,7 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	if ((s[0] == '/' || s[0] == '%') && b == 0)
+	if ((!strcmp(s, "/") || !strcmp(s, "%")) && b == 0)
 	{
 		printf("Error\n");
 		return (100);

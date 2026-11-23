@@ -5,6 +5,9 @@ a.out
 # Test files
 test_main.c
 
+# Valgrind
+vgcore*
+
 # Holberton files
 _putchar.c
 baseline_loop.c

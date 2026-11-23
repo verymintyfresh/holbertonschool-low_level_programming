@@ -7,3 +7,4 @@ This directory contains files for the Recursion project, as described below.
 | ---- | ----------- |
 | main.h | Contains declarations of various functions for the project. |
 | 0-puts\_recursion.c | Prints a string. |
+| 1-print\_rev\_recursion.c | Prints a string in reverse. |

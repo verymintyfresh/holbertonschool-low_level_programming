@@ -9,3 +9,4 @@ This directory contains files for the Argc, Argv project, as described below.
 | 1-args.c | Prints the number of arguments passed to the program. |
 | 2-args.c | Prints the arguments passed to the program. |
 | 3-mul.c | Multiplies two numbers. |
+| 4-add.c | Adds a list of numbers. |

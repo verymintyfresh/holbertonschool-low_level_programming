@@ -1,4 +1,4 @@
-global _start
+global main
 
 section .data
 
@@ -7,7 +7,7 @@ section .data
 	
 section .text
 
-_start:
+main:
 	mov eax, 1		; sys_write
 	mov edi, 1		; stdout
 	lea rsi, [rel msg]	

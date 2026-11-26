@@ -28,7 +28,7 @@ void print_all(const char *format, ...)
 			if (formats[f].c == format[i])
 			{
 				formats[f].f(ap);
-				if (i < sizeof(format))
+				if (format[i + 1] != '\0')
 					printf(", ");
 			}
 			f++;
@@ -79,10 +79,5 @@ void print_string(va_list ap)
 	char *str;
 
 	str = va_arg(ap, char *);
-	if (str != NULL)
-	{
-		printf("%s", str);
-		return;
-	}
-	printf("(nil)");
+	printf("%s", str);
 }

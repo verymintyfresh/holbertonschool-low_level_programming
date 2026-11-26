@@ -12,6 +12,11 @@ void print_int(va_list ap);
 void print_float(va_list ap);
 void print_string(va_list ap);
 
+/**
+ * struct format_s - associates format specifiers with functions
+ * @c: a format specifier
+ * @f: a function detailing how to print c
+ */
 typedef struct format_s
 {
 	char c;

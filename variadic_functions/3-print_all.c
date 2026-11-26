@@ -8,7 +8,7 @@
  */
 void print_all(const char *format, ...)
 {
-	int i;
+	unsigned int i;
 	int f;
 	va_list ap;
 	format_t formats[4] = {
@@ -25,15 +25,16 @@ void print_all(const char *format, ...)
 		f = 0;
 		while (f < 4)
 		{
-			if (formats[f].c == format[i]) {
+			if (formats[f].c == format[i])
+			{
 				formats[f].f(ap);
-				if (format[i + 1] != '\0') /* more vars */
+				if (i < sizeof(format))
 					printf(", ");
 			}
 			f++;
 		}
 		i++;
-        }
+	}
 	printf("\n");
 }
 
@@ -75,5 +76,13 @@ void print_float(va_list ap)
  */
 void print_string(va_list ap)
 {
-	printf("%s", va_arg(ap, char *));
+	char *str;
+
+	str = va_arg(ap, char *);
+	if (str != NULL)
+	{
+		printf("%s", str);
+		return;
+	}
+	printf("(nil)");
 }

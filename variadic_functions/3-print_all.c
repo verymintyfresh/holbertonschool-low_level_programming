@@ -22,17 +22,25 @@ void print_all(const char *format, ...)
 	i = 0;
 	while (format && format[i] != '\0')
 	{
-		f = 0;
-		while (f < 4)
+		switch format[i]
 		{
-			if (formats[f].c == format[i])
-			{
-				formats[f].f(ap);
-				if (format[i + 1] != '\0')
-					printf(", ");
-			}
-			f++;
+			case 'c':
+				print_char(ap);
+				break;
+			case 'i':
+				print_int(ap);
+				break;
+			case 'f':
+				print_float(ap);
+				break;
+			case 's':
+				print_string(ap);
+				break;
+			default:
+				break;
 		}
+		if (format[i + 1] != '\0')
+			printf(", ");
 		i++;
 	}
 	printf("\n");
@@ -79,5 +87,10 @@ void print_string(va_list ap)
 	char *str;
 
 	str = va_arg(ap, char *);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
 	printf("%s", str);
 }

@@ -11,12 +11,6 @@ void print_all(const char *format, ...)
 	unsigned int i;
 	int f;
 	va_list ap;
-	format_t formats[4] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string}
-	};
 
 	va_start(ap, format);
 	i = 0;

@@ -18,56 +18,27 @@ void print_all(const char *format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				print_char(ap);
+				printf("%c", (char)va_arg(ap, int));
+				print_comma(format, i + 1);
 				break;
 			case 'i':
-				print_int(ap);
+				printf("%i", va_arg(ap, int));
+				print_comma(format, i + 1);
 				break;
 			case 'f':
-				print_float(ap);
+				printf("%f", (float)va_arg(ap, double));
+				print_comma(format, i + 1);
 				break;
 			case 's':
 				print_string(ap);
+				print_comma(format, i + 1);
 				break;
 			default:
 				break;
 		}
-		if (format[i + 1] != '\0')
-			printf(", ");
 		i++;
 	}
 	printf("\n");
-}
-
-/**
- * print_char - prints a character from a variadic list
- * @ap: the variadic list
- * Return: nothing.
- */
-void print_char(va_list ap)
-{
-	printf("%c", (char)va_arg(ap, int));
-}
-
-
-/**
- * print_int - prints an integer from a variadic list
- * @ap: the variadic list
- * Return: nothing.
- */
-void print_int(va_list ap)
-{
-	printf("%i", va_arg(ap, int));
-}
-
-/**
- * print_float - prints a float from a variadic list
- * @ap: the variadic list
- * Return: nothing.
- */
-void print_float(va_list ap)
-{
-	printf("%f", (float)va_arg(ap, double));
 }
 
 /**
@@ -86,4 +57,24 @@ void print_string(va_list ap)
 		return;
 	}
 	printf("%s", str);
+}
+
+/**
+ * print_comma - prints a comma if necessary
+ * @fmt: the format string
+ * @i: the next character to print
+ * Return: nothing.
+ */
+void print_comma(const char *fmt, unsigned int i)
+{
+	while (fmt[i] != '\0')
+	{
+		if (fmt[i] == 'c' || fmt[i] == 'i' ||
+		    fmt[i] == 'f' || fmt[i] == 's') /* more to print */
+		{
+			printf(", ");
+			return;
+		}
+		i++;
+	}
 }

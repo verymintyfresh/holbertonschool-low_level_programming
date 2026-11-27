@@ -22,7 +22,7 @@ void print_all(const char *format, ...)
 	i = 0;
 	while (format && format[i] != '\0')
 	{
-		switch format[i]
+		switch (format[i])
 		{
 			case 'c':
 				print_char(ap);
